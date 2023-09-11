@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Pomodoro Timer - Luc Leveque </h1>
+
+    <div id="titles">
+        <h2 id="work"> Work </h2>
+        <h2 id="break"> Break </h2>
+    </div>
+    
+
+
+    <div id="timer">25:00</div>
+
+        <button onclick="startTimer()"> Travail 📖 </button>
+        <button onclick="reset()"> Reset 🔄 </button>
+        <button onclick="configure()"> Configure ⚙️ </button>
+
+    <div id="message"> Prêt ? </div>
+
+
+    <div id="form">
+        <label> Time : (in seconds) </label>
+        <input id="time"/>
+        <button type="submit" onclick="updateConfigure()"> Confirmer </button>
+    </div>
+    
+    <script src="script.js"></script>
+
+
+</body>
+</html>
