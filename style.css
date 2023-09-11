@@ -3,29 +3,29 @@ body, h1, h2, div, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
   /* Style de base pour le corps de la page */
-  body {
+body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     text-align: center;
     padding: 20px;
     background-color: #c7011a;
-  }
+}
   
   /* Style du titre principal */
-  h1 {
+h1 {
     font-size: 36px;
     color: white;
     margin-bottom: 20px;
-  }
+}
 
 
 
   
   /* Style des titres Work et Break */
-  #titles {
+#titles {
     position: relative;
     left: 40%; 
     padding-top: 10px; /* Padding for inner content */
@@ -40,36 +40,35 @@ body, h1, h2, div, button {
     border: 1px solid black;
     width: fit-content;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2.8); /* Ombre avec flou gaussien */  }
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2.8);
+}
   
-  #titles h2 {
+#titles h2 {
     font-size: 24px;
     color: white;
     margin: 0 10px;
-  }
+}
 
-  #titles > #work {
+#titles > #work {
     padding-right: 20px;
-  }
+}
 
-  #titles > #break{
+#titles > #break{
     padding-left: 20px;
-  }
+}
   
   
-  /* Style du timer */
-  #timer {
+#timer {
     font-size: 48px;
     color: white;
     margin-top: 65px;
-  }
+}
 
-  #formText{
+#formText{
     color: white;
-  }
+}
   
-  /* Style des boutons */
-  button {
+button {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -78,55 +77,42 @@ body, h1, h2, div, button {
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-  }
+}
   
-  button:hover {
+button:hover {
     background-color: #0056b3;
-  }
+}
   
-  /* Style du formulaire */
-  #form {
+#form {
     margin-top: 20px;
     display: none;
-  }
+}
   
-  label {
+label {
     font-size: 18px;
     color: #333;
-  }
+}
   
-  input {
+input {
     font-size: 16px;
     padding: 5px;
     margin: 5px;
     width: 100px;
-  }
-
-  
-  /* Créez un cercle en CSS 
-.mon-cercle {
-  border-radius: 50%; 
-  border: 5px solid lightgreen;
-  width: 200px; 
-  height: 200px;
 }
-
-*/
 
 .another-circle{
   border-radius: 50%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 2.8); /* Ombre avec flou gaussien */
-  width: 200px; /* Largeur du cercle agrandie */
-  height: 200px; /* Hauteur du cercle agrandie (assurez-vous qu'elle est égale à la largeur) */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 2.8); 
+  width: 200px; 
+  height: 200px;
   position: relative;
   left: 43%;
-  border: 5px solid lightgreen; /* Ajoutez une bordure de 2px de large */
-  padding: 10px; /* Ajoutez un espace intérieur (padding) autour du contenu */
+  border: 5px solid lightgreen; 
+  padding: 10px;
 }
 
-/* Ajoutez une séparation entre les boutons et le cercle */
 .buttons {
-  text-align: center; /* Centrer les boutons horizontalement */
-  margin-top: 20px; /* Ajoutez une marge en haut pour créer de l'espace */
+  text-align: center; 
+  margin-top: 20px;
 }
 
