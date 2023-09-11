@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,20 +15,23 @@
         <h2 id="break"> Break </h2>
     </div>
     
+    <div class="another-circle">
+        <div class="mon-cercle">
+            <div id="timer">25:00</div>
+        </div>    
+    </div>
 
+        <div class="buttons">
+            <button id="play" onclick="startTimer()"> <span class="fas fa-play"></span>  </button>
+            <button id="reset" onclick="reset()"> <span class="fas fa-undo"></span> </button>
+            <button onclick="configure()"> Configure ⚙️ </button>    
+        </div>
 
-    <div id="timer">25:00</div>
-
-        <button onclick="startTimer()"> Travail 📖 </button>
-        <button onclick="reset()"> Reset 🔄 </button>
-        <button onclick="configure()"> Configure ⚙️ </button>
-
-    <div id="message"> Prêt ? </div>
 
 
     <div id="form">
-        <label> Time : (in seconds) </label>
-        <input id="time"/>
+        <label for="formText" id="formText"> Time : (in seconds) </label> 
+        <input type="text" id="time">
         <button type="submit" onclick="updateConfigure()"> Confirmer </button>
     </div>
     

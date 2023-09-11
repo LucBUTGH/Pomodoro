@@ -14,9 +14,11 @@ resetButton.style.display = "none";
 //Function to color current period's text (work or break)
 function CSS(){
     if(work){
+      breakElement.style.color = "white";
       workElement.style.color = "lightgreen";
     }else{
-        breakElement.style.color = "lightgreen";
+      workElement.style.color = "white";
+      breakElement.style.color = "lightgreen";
     }
 }
 
