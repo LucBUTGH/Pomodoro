@@ -47,6 +47,27 @@ function startTimer() {
     }
   }
 
+  function configure() {
+    console.log("OK");
+      reset();
+      const timeInput = document.getElementById("time");
+      timeInput.value = currentTime;
+      document.getElementById("form").style.display = "block";
+  }
+  
+  // Fonction pour mettre à jour la configuration
+  function updateConfigure() {
+    const timeInput = document.getElementById("time");
+    const newTime = parseInt(timeInput.value, 10);
+    if (!isNaN(newTime) && newTime > 0) {
+      currentTime = newTime;
+      workTime = newTime;
+      breakTime = newTime;
+      updateTimer();
+      document.getElementById("form").style.display = "none";
+    }
+  }
+
 
 
 
