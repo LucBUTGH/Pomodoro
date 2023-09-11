@@ -8,6 +8,13 @@ let currentTime = workTime; // Temps actuel (initialisé au temps de travail par
 let workElement = document.getElementById("work")
 let breakElement = document.getElementById("break")
 
+function CSS(){
+  if(work){
+    workElement.style.color = "lightgreen";
+  }else{
+      breakElement.style.color = "lightgreen";
+  }
+}
 
 // Fonction pour mettre à jour l'affichage du minuteur
 function updateTimer() {
@@ -68,6 +75,29 @@ function startTimer() {
       breakTime = newTime;
       updateTimer();
       document.getElementById("form").style.display = "none";
+    }
+  }
+
+  function startCountdown() {
+    if (!isRunning) {
+        const countdownTime = Math.floor(workTime / 5); // 1/5 du temps de travail
+        currentTime = countdownTime; // Mettre à jour le temps actuel avec le countdown
+        updateTimer();
+        timer = setInterval(function () {
+        if (currentTime <= 0) {
+            clearInterval(timer);
+            isRunning = false;
+            work = true; // Revenir au mode travail
+            CSS();
+            currentTime = workTime;
+            updateTimer();
+            startTimer(); // Démarrer le minuteur principal
+        } else {
+            currentTime--;
+            updateTimer();
+        }
+      }, 1000);  
+      isRunning = true;
     }
   }
 
