@@ -8,35 +8,42 @@
     <title>Pomodoro Timer</title>
 </head>
 <body>
-    <h1> Pomodoro Timer - Luc Leveque </h1>
 
+    <h1>Pomodoro Timer - Luc Leveque</h1>
+
+    <!-- Titles -->
     <div id="titles">
-        <h2 id="work"> Work </h2>
-        <h2 id="break"> Break </h2>
+        <h2 id="work">Work</h2>
+        <h2 id="break">Break</h2>
     </div>
     
+    <!-- Circle around the timer -->
     <div class="another-circle">
         <div class="mon-cercle">
             <div id="timer">25:00</div>
         </div>    
     </div>
 
-        <div class="buttons">
-            <button id="play" onclick="startTimer()"> <span class="fas fa-play"></span>  </button>
-            <button id="reset" onclick="reset()"> <span class="fas fa-undo"></span> </button>
-            <button onclick="configure()"> Configure ⚙️ </button>    
-        </div>
+    <!-- Buttons to start or configure the timer -->
+    <div class="buttons">
+        <button id="play" onclick="startTimer()"><span class="fas fa-play"></span></button>
+        <button id="reset" onclick="reset()"><span class="fas fa-undo"></span></button>
+        <button onclick="configure()"><span class="fas fa-cog" aria-hidden="true"></span><span class="sr-only"></span></button>
+    </div>
 
-
-
+    <!-- Form to set up the timers -->
     <div id="form">
-        <label for="formText" id="formText"> Time : (in seconds) </label> 
-        <input type="text" id="time">
-        <button type="submit" onclick="updateConfigure()"> Confirmer </button>
+        <label for="worktime">Work Time (in seconds):</label>
+        <input type="text" id="worktime">
+        <br>
+        <label for="breaktime">Break Time (in seconds):</label>
+        <input type="text" id="breaktime">
+        <br>
+        <button type="submit" onclick="updateConfigure()">Confirm</button>
     </div>
     
+    <!-- Script -->
     <script src="script.js"></script>
-
 
 </body>
 </html>

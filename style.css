@@ -1,11 +1,11 @@
-/* Reset des marges et des paddings */
+/* Reset margins and paddings for common elements */
 body, h1, h2, div, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  
-  /* Style de base pour le corps de la page */
+
+/* Basic styling for the page body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -13,26 +13,19 @@ body {
     padding: 20px;
     background-color: #c7011a;
 }
-  
-  /* Style du titre principal */
+
+/* Styling for headings */
 h1 {
     font-size: 36px;
     color: white;
     margin-bottom: 20px;
 }
 
-
-
-  
-  /* Style des titres Work et Break */
+/* Styling for Work and Break titles */
 #titles {
     position: relative;
-    left: 40%; 
-    padding-top: 10px; 
-    padding-bottom: 15px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top: 15px;
+    left: 40%;
+    padding: 15px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,9 +33,9 @@ h1 {
     border: 1px solid black;
     width: fit-content;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-  
+
 #titles h2 {
     font-size: 24px;
     color: white;
@@ -56,8 +49,8 @@ h1 {
 #titles > #break{
     padding-left: 20px;
 }
-  
-  
+
+/* Styling for the timer */
 #timer {
     font-size: 48px;
     color: white;
@@ -67,7 +60,8 @@ h1 {
 #formText{
     color: white;
 }
-  
+
+/* Styling for buttons */
 button {
     background-color: #007bff;
     color: #fff;
@@ -78,21 +72,22 @@ button {
     margin: 5px;
     cursor: pointer;
 }
-  
+
 button:hover {
     background-color: #0056b3;
 }
-  
+
+/* Styling for the form */
 #form {
     margin-top: 20px;
     display: none;
 }
-  
+
 label {
     font-size: 18px;
     color: #333;
 }
-  
+
 input {
     font-size: 16px;
     padding: 5px;
@@ -100,77 +95,77 @@ input {
     width: 100px;
 }
 
-.another-circle{
-  border-radius: 50%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 2.8); 
-  width: 200px; 
-  height: 200px;
-  position: relative;
-  left: 43%;
-  border: 5px solid lightgreen; 
-  padding: 10px;
+/* Styling for the circular element with a shadow */
+.another-circle {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 43%;
+    border: 5px solid lightgreen;
+    padding: 10px;
 }
 
+/* Styling for the buttons section */
 .buttons {
-  text-align: center; 
-  margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Ajout de règles CSS pour la mise en page responsive */
-
-/* Pour les petits écrans */
+/* Responsive layout for small screens */
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* Réduire le rembourrage du corps */
+        padding: 10px;
     }
 
     #titles {
-        left: 0; /* Réinitialiser la position relative */
-        padding: 10px; /* Réduire le rembourrage */
+        left: 0;
+        padding: 10px;
         margin-bottom: 15px;
         margin: auto;
     }
 
     #titles h2 {
-        font-size: 20px; /* Réduire la taille du texte */
-        margin: 5px 0; /* Réduire la marge autour des titres */
-        padding: 5px; /* Réduire le rembourrage des titres */
+        font-size: 20px;
+        margin: 5px 0;
+        padding: 5px;
     }
 
     #timer {
-        font-size: 36px; /* Réduire la taille du texte du minuteur */
-        margin-top: 40px; /* Réduire la marge supérieure du minuteur */
+        font-size: 36px;
+        margin-top: 40px;
     }
 
     button {
-        font-size: 16px; /* Réduire la taille du texte des boutons */
-        padding: 8px 16px; /* Réduire le rembourrage des boutons */
-        margin: 3px; /* Réduire la marge des boutons */
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 3px;
     }
 
     .another-circle {
-        width: 150px; /* Réduire la taille du cercle */
-        height: 150px; /* Réduire la taille du cercle */
-        left: 50%; /* Réinitialiser la position relative */
-        transform: translateX(-50%); /* Centrer horizontalement */
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
-/* Pour les écrans très petits (par exemple, les smartphones en mode portrait) */
+/* Responsive layout for very small screens */
 @media (max-width: 480px) {
     #timer {
-        font-size: 24px; /* Réduire encore la taille du texte du minuteur */
-        margin-top: 30px; /* Réduire davantage la marge supérieure du minuteur */
+        font-size: 24px;
+        margin-top: 30px;
     }
 
     button {
-        font-size: 14px; /* Réduire davantage la taille du texte des boutons */
-        padding: 6px 12px; /* Réduire davantage le rembourrage des boutons */
+        font-size: 14px;
+        padding: 6px 12px;
     }
 
     .another-circle {
-        width: 120px; /* Réduire encore la taille du cercle */
-        height: 120px; /* Réduire encore la taille du cercle */
+        width: 120px;
+        height: 120px;
     }
 
     #titles{
