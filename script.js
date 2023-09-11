@@ -14,6 +14,14 @@ function updateTimer() {
   timerDisplay.textContent = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 }
 
+//Réinitialiser minuteur
+function reset() {
+  clearInterval(timer);
+  isRunning = false;
+  currentTime = workTime;
+  updateTimer();
+  document.getElementById("form").style.display = "none";
+}
 
 
 // Fonction pour démarrer/arrêter le minuteur
