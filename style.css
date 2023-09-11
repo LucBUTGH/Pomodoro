@@ -28,8 +28,8 @@ h1 {
 #titles {
     position: relative;
     left: 40%; 
-    padding-top: 10px; /* Padding for inner content */
-    padding-bottom: 15px; /* Padding for inner content */
+    padding-top: 10px; 
+    padding-bottom: 15px;
     padding-right: 50px;
     padding-left: 50px;
     padding-top: 15px;
@@ -116,3 +116,64 @@ input {
   margin-top: 20px;
 }
 
+/* Ajout de règles CSS pour la mise en page responsive */
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Réduire le rembourrage du corps */
+    }
+
+    #titles {
+        left: 0; /* Réinitialiser la position relative */
+        padding: 10px; /* Réduire le rembourrage */
+        margin-bottom: 15px;
+        margin: auto;
+    }
+
+    #titles h2 {
+        font-size: 20px; /* Réduire la taille du texte */
+        margin: 5px 0; /* Réduire la marge autour des titres */
+        padding: 5px; /* Réduire le rembourrage des titres */
+    }
+
+    #timer {
+        font-size: 36px; /* Réduire la taille du texte du minuteur */
+        margin-top: 40px; /* Réduire la marge supérieure du minuteur */
+    }
+
+    button {
+        font-size: 16px; /* Réduire la taille du texte des boutons */
+        padding: 8px 16px; /* Réduire le rembourrage des boutons */
+        margin: 3px; /* Réduire la marge des boutons */
+    }
+
+    .another-circle {
+        width: 150px; /* Réduire la taille du cercle */
+        height: 150px; /* Réduire la taille du cercle */
+        left: 50%; /* Réinitialiser la position relative */
+        transform: translateX(-50%); /* Centrer horizontalement */
+    }
+}
+
+/* Pour les écrans très petits (par exemple, les smartphones en mode portrait) */
+@media (max-width: 480px) {
+    #timer {
+        font-size: 24px; /* Réduire encore la taille du texte du minuteur */
+        margin-top: 30px; /* Réduire davantage la marge supérieure du minuteur */
+    }
+
+    button {
+        font-size: 14px; /* Réduire davantage la taille du texte des boutons */
+        padding: 6px 12px; /* Réduire davantage le rembourrage des boutons */
+    }
+
+    .another-circle {
+        width: 120px; /* Réduire encore la taille du cercle */
+        height: 120px; /* Réduire encore la taille du cercle */
+    }
+
+    #titles{
+        margin-bottom: 15px;
+    }
+}
