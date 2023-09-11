@@ -1,9 +1,12 @@
 // Variables globales pour le compteur et le minuteur
 let timer;
 let isRunning = false;
+let work = true;
 let workTime = 25 * 60; // 25 minutes en secondes
+let breakTime = 5 * 60; // 5 minutes en secondes
 let currentTime = workTime; // Temps actuel (initialisé au temps de travail par défaut)
-
+let workElement = document.getElementById("work")
+let breakElement = document.getElementById("break")
 
 
 // Fonction pour mettre à jour l'affichage du minuteur
