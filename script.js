@@ -2,16 +2,16 @@
 let timer;
 let isRunning = false;
 let work = true;
-let workTime = 25 * 60; // 25 minutes en secondes
-let breakTime = 5 * 60; // 5 minutes en secondes
-let currentTime = workTime; // Temps actuel (initialisé au temps de travail par défaut)
+let workTime = 25 * 60; //Pomoro default time in seconds
+let breakTime = 5 * 60; //Pomoro default break time in seconds
+let currentTime = workTime; //Current time (intialized at work time)
 let workElement = document.getElementById("work")
 let breakElement = document.getElementById("break")
 let playButton = document.getElementById("play")
 let resetButton = document.getElementById("reset")
 resetButton.style.display = "none";
 
-
+//Function to color current period's text (work or break)
 function CSS(){
     if(work){
       workElement.style.color = "lightgreen";
@@ -21,7 +21,7 @@ function CSS(){
 }
 
 
-// Fonction pour mettre à jour l'affichage du minuteur
+// Function to update the timer display
 function updateTimer() {
   const timerDisplay = document.getElementById("timer");
   const minutes = Math.floor(currentTime / 60);
@@ -31,7 +31,7 @@ function updateTimer() {
 
 
 
-// Fonction pour démarrer/arrêter le minuteur
+// Function to start/stop the timer
 function startTimer() {
   resetButton.style.display = "inline"
   playButton.style.display = "none";
@@ -43,7 +43,7 @@ function startTimer() {
             isRunning = false
             work = false;
             CSS();
-            startCountdown(); // Démarrer le countdown
+            startCountdown(); //Start the countdown
         } else {
             currentTime--;
             updateTimer();
@@ -56,7 +56,7 @@ function startTimer() {
     }
   }
 
-// Fonction pour réinitialiser le minuteur
+//Function to reset the timer
 function reset() {
   playButton.style.display = "inline"
   resetButton.style.display = "none";
@@ -67,7 +67,7 @@ function reset() {
     document.getElementById("form").style.display = "none";
 }
 
-// Fonction pour configurer le temps de travail et de pause
+//Function to set up the work time. The break time will be calculated according to work time. (20% of work time)
 function configure() {
   console.log("OK");
     reset();
@@ -76,7 +76,7 @@ function configure() {
     document.getElementById("form").style.display = "block";
 }
 
-// Fonction pour mettre à jour la configuration
+//Function to save the configuration
 function updateConfigure() {
   const timeInput = document.getElementById("time");
   const newTime = parseInt(timeInput.value, 10);
@@ -89,20 +89,21 @@ function updateConfigure() {
   }
 }
 
+//Function to start the break timer
 function startCountdown() {
     if (!isRunning) {
-        const countdownTime = Math.floor(workTime / 5); // 1/5 du temps de travail
-        currentTime = countdownTime; // Mettre à jour le temps actuel avec le countdown
+        const countdownTime = Math.floor(workTime / 5); //20% work time
+        currentTime = countdownTime; //Update the current time with the countdown
         updateTimer();
         timer = setInterval(function () {
         if (currentTime <= 0) {
             clearInterval(timer);
             isRunning = false;
-            work = true; // Revenir au mode travail
+            work = true; // Back to work mode
             CSS();
             currentTime = workTime;
             updateTimer();
-            startTimer(); // Démarrer le minuteur principal
+            startTimer(); //Start the main timer
         } else {
             currentTime--;
             updateTimer();
@@ -111,7 +112,6 @@ function startCountdown() {
       isRunning = true;
     }
   }
-
 
 updateTimer();
 CSS();

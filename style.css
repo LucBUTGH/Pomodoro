@@ -1,0 +1,132 @@
+/* Reset des marges et des paddings */
+body, h1, h2, div, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style de base pour le corps de la page */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    background-color: #c7011a;
+  }
+  
+  /* Style du titre principal */
+  h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+
+
+  
+  /* Style des titres Work et Break */
+  #titles {
+    position: relative;
+    left: 40%; 
+    padding-top: 10px; /* Padding for inner content */
+    padding-bottom: 15px; /* Padding for inner content */
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 2.8); /* Ombre avec flou gaussien */  }
+  
+  #titles h2 {
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+  }
+
+  #titles > #work {
+    padding-right: 20px;
+  }
+
+  #titles > #break{
+    padding-left: 20px;
+  }
+  
+  
+  /* Style du timer */
+  #timer {
+    font-size: 48px;
+    color: white;
+    margin-top: 65px;
+  }
+
+  #formText{
+    color: white;
+  }
+  
+  /* Style des boutons */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style du formulaire */
+  #form {
+    margin-top: 20px;
+    display: none;
+  }
+  
+  label {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  input {
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+  }
+
+  
+  /* Créez un cercle en CSS 
+.mon-cercle {
+  border-radius: 50%; 
+  border: 5px solid lightgreen;
+  width: 200px; 
+  height: 200px;
+}
+
+*/
+
+.another-circle{
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 2.8); /* Ombre avec flou gaussien */
+  width: 200px; /* Largeur du cercle agrandie */
+  height: 200px; /* Hauteur du cercle agrandie (assurez-vous qu'elle est égale à la largeur) */
+  position: relative;
+  left: 43%;
+  border: 5px solid lightgreen; /* Ajoutez une bordure de 2px de large */
+  padding: 10px; /* Ajoutez un espace intérieur (padding) autour du contenu */
+}
+
+/* Ajoutez une séparation entre les boutons et le cercle */
+.buttons {
+  text-align: center; /* Centrer les boutons horizontalement */
+  margin-top: 20px; /* Ajoutez une marge en haut pour créer de l'espace */
+}
+
