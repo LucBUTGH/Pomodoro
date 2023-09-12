@@ -11,7 +11,7 @@
 
 ## Introduction
 
-The Pomodoro Timer is a time management application based on the Pomodoro technique. This project was developed by Luc Leveque as part of their second-year coursework in the Bachelor's in Information Technology program.
+The Pomodoro Timer is a time management application based on the Pomodoro technique. This project was developed by Luc Leveque as part of their second-year coursework in the BUT Informatique program.
 
 The Pomodoro technique is a time management method that uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. This technique is known to improve productivity and focus.
 
