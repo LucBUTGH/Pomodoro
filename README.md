@@ -15,8 +15,6 @@ The Pomodoro Timer is a time management application based on the Pomodoro techni
 
 The Pomodoro technique is a time management method that uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. This technique is known to improve productivity and focus.
 
-![Pomodoro Technique]
-
 ## Features
 
 - Simple and intuitive interface
