@@ -5,6 +5,11 @@ body, h1, h2, div, button {
     box-sizing: border-box;
 }
 
+#worktimeText, #breaktimeText{
+    color: white;
+    font-weight: bold;
+}
+
 /* Basic styling for the page body */
 body {
     font-family: Roboto, sans-serif;
