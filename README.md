@@ -26,7 +26,7 @@ The Pomodoro technique is a time management method that uses a timer to break do
 
 ### Prerequisites
 
-- Web browser (for the web version)
+- Web browser
 
 #### Web Version
 
