@@ -30,5 +30,5 @@ The Pomodoro technique is a time management method that uses a timer to break do
 
 #### Web Version
 
-1. Simply visit our website at [https://www.pomodorotimer.com]([https://www.pomodorotimer.com](https://lucbutgh.github.io/Pomodoro/)).
+1. Simply visit our website at [https://lucbutgh.github.io/Pomodoro]([https://lucbutgh.github.io/Pomodoro/]).
 2. Start using the Pomodoro Timer right away.
